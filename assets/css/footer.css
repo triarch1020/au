@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 .container {
   padding-left: 20px;
   padding-right: 20px;
@@ -9,7 +7,6 @@
   position: relative;
 }
 
->>>>>>> 318a1885c887e608581719d4f85831aa6c5e0cb8
 .footer_btn {
   position: relative;
   width: 170px;
@@ -88,7 +85,6 @@
 footer {
   margin-top: 100px;
   font-family: 'Noto Sans JP', "繝偵Λ繧ｮ繝手ｧ偵ざ Pro", "Hiragino Kaku Gothic Pro", "繝｡繧､繝ｪ繧ｪ", Meiryo, sans-serif;
-
 }
 
 .text-right {
@@ -131,15 +127,6 @@ footer .copyright p {
 
   }
 
-<<<<<<< HEAD
-
-
-  .header_logobox img {
-    max-width: 244px;
-  }
-
-=======
->>>>>>> 318a1885c887e608581719d4f85831aa6c5e0cb8
   .footer_btn .btn_text {
     display: none;
   }

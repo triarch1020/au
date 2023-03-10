@@ -4,27 +4,10 @@ header {
   left: 0;
   width: 100%;
   background-color: white;
-<<<<<<< HEAD
-  font-family: 'Noto Sans JP', "繝偵Λ繧ｮ繝手ｧ偵ざ Pro", "Hiragino Kaku Gothic Pro", "繝｡繧､繝ｪ繧ｪ", Meiryo, sans-serif;
-  z-index: 100;
-}
-
-.container {
-  padding-left: 20px;
-  padding-right: 20px;
-  width: 100%;
-  max-width: 1140px;
-  margin: 0 auto;
-  position: relative;
-}
-
-
-=======
   font-family: 'Noto Sans JP', "ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, sans-serif;
   z-index: 100;
 }
 
->>>>>>> 318a1885c887e608581719d4f85831aa6c5e0cb8
 .flex {
   display: flex;
 }
@@ -58,14 +41,11 @@ nav.flex {
 
 
 .has_child {
-  /* overflow: hidden; */
   position: relative;
 }
 
 .has_child .nav_children {
   display: flex;
-  /* transition: all 0.6s; */
-  /* transform: translate(0,-200%); */
   flex-direction: column;
   position: absolute;
   top: 44px;
@@ -155,56 +135,6 @@ nav.flex {
   fill: #fff;
 }
 
-
-.breadcrumbs {
-  width: 100%;
-  background-color: #686868;
-  padding: 10px 30px;
-  font-weight: 500;
-  font-size: 1.6rem;
-  line-height: 1;
-  text-align: left;
-  color: #fff;
-  align-items: center;
-}
-
-.breadcrumbs a {
-  text-decoration: none;
-  color: white !important;
-  font-weight: normal;
-  font-size: 16px;
-  line-height: 21px;
-}
-
-.breadcrumbs a:hover {
-  text-decoration: underline;
-}
-
-.breadcrumbs {
-  display: flex;
-  margin-top: 74px;
-}
-
-.breadcrumbs * {
-  color: white;
-}
-
-.breadcrumbs li {
-  padding-right: 1em;
-  padding-left: 1em;
-  font-size: 16px;
-  line-height: 21px;
-}
-
-.breadcrumbs li:first-child {
-  padding-left: 0;
-}
-
-.c-BreadList:not(:last-child):after {
-  content: none !important;
-}
-
-
 @media screen and (min-width: 1020px) and (max-width: 1470px) {
   .header_nav_lists>li.has_child>a {
     padding-right: 30px;
@@ -289,11 +219,6 @@ nav.flex {
     background-color: rgba(0, 0, 0, 0.6);
     transform: translate(0, -100%);
     transition: all .4s;
-<<<<<<< HEAD
-    /*繧｢繝九Γ繝ｼ繧ｷ繝ｧ繝ｳ縺ｮ險ｭ螳�*/
-
-=======
->>>>>>> 318a1885c887e608581719d4f85831aa6c5e0cb8
   }
 
   .nav_wrap.active {
@@ -343,8 +268,6 @@ nav.flex {
 
   .has_child .nav_children {
     display: flex;
-    /* transition: all 0.6s; */
-    /* transform: translate(0,-200%); */
     flex-direction: column;
     position: relative;
     top: auto;
@@ -399,11 +322,6 @@ nav.flex {
     fill: #fff;
   }
 
-<<<<<<< HEAD
-  /*繝懊ち繝ｳ蜀��*/
-=======
-  /*ボタン内側*/
->>>>>>> 318a1885c887e608581719d4f85831aa6c5e0cb8
   .openbtn1 {
     display: block;
     position: fixed;
@@ -414,18 +332,15 @@ nav.flex {
     height: 45px;
   }
 
-<<<<<<< HEAD
-  /*繝懊ち繝ｳ蜀��*/
   .openbtn1 span {
     display: inline-block;
     transition: all .4s;
-    /*繧｢繝九Γ繝ｼ繧ｷ繝ｧ繝ｳ縺ｮ險ｭ螳�*/
-=======
+  }
+
   /*ボタン内側*/
   .openbtn1 span {
     display: inline-block;
     transition: all .4s;
->>>>>>> 318a1885c887e608581719d4f85831aa6c5e0cb8
     position: absolute;
     left: 0;
     height: 3px;
@@ -446,11 +361,7 @@ nav.flex {
     top: 31px;
   }
 
-<<<<<<< HEAD
-  /*active繧ｯ繝ｩ繧ｹ縺御ｻ倅ｸ弱＆繧後ｋ縺ｨ邱壹′蝗櫁ｻ｢縺励※ﾃ励↓*/
-=======
   /*activeクラスが付与されると線が回転して×に*/
->>>>>>> 318a1885c887e608581719d4f85831aa6c5e0cb8
   .openbtn1.active span {
     background-color: white;
   }
@@ -463,11 +374,7 @@ nav.flex {
 
   .openbtn1.active span:nth-of-type(2) {
     opacity: 0;
-<<<<<<< HEAD
-    /*逵溘ｓ荳ｭ縺ｮ邱壹�騾城℃*/
-=======
     /*真ん中の線は透過*/
->>>>>>> 318a1885c887e608581719d4f85831aa6c5e0cb8
   }
 
   .openbtn1.active span:nth-of-type(3) {
@@ -501,12 +408,4 @@ nav.flex {
   .header_logobox a {
     line-height: 20px;
   }
-<<<<<<< HEAD
-
-  .container {
-    max-width: none;
-  }
-
-=======
->>>>>>> 318a1885c887e608581719d4f85831aa6c5e0cb8
 }
