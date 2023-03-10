@@ -1,0 +1,512 @@
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: white;
+<<<<<<< HEAD
+  font-family: 'Noto Sans JP', "繝偵Λ繧ｮ繝手ｧ偵ざ Pro", "Hiragino Kaku Gothic Pro", "繝｡繧､繝ｪ繧ｪ", Meiryo, sans-serif;
+  z-index: 100;
+}
+
+.container {
+  padding-left: 20px;
+  padding-right: 20px;
+  width: 100%;
+  max-width: 1140px;
+  margin: 0 auto;
+  position: relative;
+}
+
+
+=======
+  font-family: 'Noto Sans JP', "ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, sans-serif;
+  z-index: 100;
+}
+
+>>>>>>> 318a1885c887e608581719d4f85831aa6c5e0cb8
+.flex {
+  display: flex;
+}
+
+.pc {
+  display: block;
+}
+
+.sp {
+  display: none;
+}
+
+nav.flex {
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  z-index: 50;
+}
+
+.openbtn1 {
+  display: none;
+}
+
+.header_logobox {
+  padding: 10px 30px
+}
+
+.header_logobox img {
+  max-height: 25px;
+}
+
+
+.has_child {
+  /* overflow: hidden; */
+  position: relative;
+}
+
+.has_child .nav_children {
+  display: flex;
+  /* transition: all 0.6s; */
+  /* transform: translate(0,-200%); */
+  flex-direction: column;
+  position: absolute;
+  top: 44px;
+  z-index: 100;
+  width: 100%;
+  display: none;
+}
+
+.nav_children li {
+  background-color: white;
+  border: none;
+  text-align: center;
+  transition: all 0.3s;
+}
+
+.nav_children li:hover {
+
+  background-color: #EEEEEE;
+}
+
+.nav_children li a {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 40px;
+  text-align: center;
+  color: #333;
+  transition: all 0.3s;
+}
+
+.nav_children li a:hover {
+  background-color: #EEEEEE;
+}
+
+.has_child.active .nav_children {
+  transform: translate(0, 0);
+
+}
+
+.header_nav_lists {
+  color: var(--main-color);
+}
+
+.header_nav_lists a:hover {
+  text-decoration: none;
+}
+
+.header_nav_lists {
+  padding: 15px 30px;
+}
+
+
+.header_nav_lists>li>a {
+  font-weight: bold;
+  font-size: 16px;
+  text-align: center;
+  color: var(--main-color);
+  display: block;
+  width: 170px;
+  line-height: 40px;
+  border: 2px solid var(--main-color);
+  margin-left: 2px;
+  transition: all 0.3s;
+}
+
+.header_nav_lists>li>a:hover {
+  background-color: var(--main-color);
+  color: white;
+}
+
+.has_child svg {
+  fill: var(--main-color);
+}
+
+.has_child {
+  position: relative;
+}
+
+.has_child svg {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translate(0, -50%);
+}
+
+.header_nav_lists li a:hover svg {
+  transform: translate(0, -50%) rotate(-90deg);
+  fill: #fff;
+}
+
+
+.breadcrumbs {
+  width: 100%;
+  background-color: #686868;
+  padding: 10px 30px;
+  font-weight: 500;
+  font-size: 1.6rem;
+  line-height: 1;
+  text-align: left;
+  color: #fff;
+  align-items: center;
+}
+
+.breadcrumbs a {
+  text-decoration: none;
+  color: white !important;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 21px;
+}
+
+.breadcrumbs a:hover {
+  text-decoration: underline;
+}
+
+.breadcrumbs {
+  display: flex;
+  margin-top: 74px;
+}
+
+.breadcrumbs * {
+  color: white;
+}
+
+.breadcrumbs li {
+  padding-right: 1em;
+  padding-left: 1em;
+  font-size: 16px;
+  line-height: 21px;
+}
+
+.breadcrumbs li:first-child {
+  padding-left: 0;
+}
+
+.c-BreadList:not(:last-child):after {
+  content: none !important;
+}
+
+
+@media screen and (min-width: 1020px) and (max-width: 1470px) {
+  .header_nav_lists>li.has_child>a {
+    padding-right: 30px;
+  }
+
+  .header_nav_lists>li>a {
+    width: auto;
+    padding: 0 15px;
+    font-size: 14px;
+  }
+
+  .logo_icon {
+    bottom: 40px;
+    transform: translate(0, 0);
+  }
+
+  .header_logobox img {
+    max-height: 18px;
+  }
+
+  .nav_children li a {
+    font-size: 12px;
+    line-height: 18px;
+    padding: 10px 10px;
+    text-align: left;
+    display: block;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1019px) {
+  .header_nav_lists>li.has_child>a {
+    padding-right: 30px;
+  }
+
+  .header_nav_lists>li>a {
+    width: auto;
+    padding: 0 10px;
+    font-size: 10px;
+  }
+
+  .logo_icon {
+    bottom: 40px;
+    transform: translate(0, 0);
+  }
+
+  .header_logobox img {
+    max-height: 15px;
+  }
+
+  .nav_children li a {
+    font-size: 12px;
+    line-height: 18px;
+    padding: 10px 10px;
+    text-align: left;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .pc {
+    display: none;
+  }
+
+  .sp {
+    display: block;
+  }
+
+  .logo_icon {
+    position: relative;
+    right: auto;
+    bottom: auto;
+    transform: none;
+
+  }
+
+  .nav_wrap {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.6);
+    transform: translate(0, -100%);
+    transition: all .4s;
+<<<<<<< HEAD
+    /*繧｢繝九Γ繝ｼ繧ｷ繝ｧ繝ｳ縺ｮ險ｭ螳�*/
+
+=======
+>>>>>>> 318a1885c887e608581719d4f85831aa6c5e0cb8
+  }
+
+  .nav_wrap.active {
+    transform: translate(0, 0);
+  }
+
+  .header_nav_lists {
+    flex-wrap: wrap;
+    margin-top: 60px;
+  }
+
+  .header_nav_lists li {
+    width: 100%;
+    border-top: 1px solid #fff;
+  }
+
+  .header_nav_lists li:last-of-type {
+    border-bottom: 1px solid #fff;
+  }
+
+  .header_nav_lists>li>a {
+    display: flex;
+    align-items: center;
+    padding: 10px 0;
+  }
+
+  .header_nav_lists>li>a {
+    font-weight: bold;
+    font-size: 16px;
+    text-align: center;
+    color: white;
+    width: 100%;
+    line-height: 40px;
+    border: none;
+    margin-left: 0;
+    transition: all 0.3s;
+  }
+
+  .header_nav_lists>li>a>span {
+    margin-right: 20px;
+  }
+
+  .has_child svg {
+    transform: translate(0, -50%) rotate(-90deg);
+    top: 50%;
+  }
+
+  .has_child .nav_children {
+    display: flex;
+    /* transition: all 0.6s; */
+    /* transform: translate(0,-200%); */
+    flex-direction: column;
+    position: relative;
+    top: auto;
+    z-index: 100;
+    width: 100%;
+  }
+
+  .header_nav_lists>li>a {
+    position: relative;
+  }
+
+  .header_nav_lists>li>a.active {
+    background-color: rgba(255, 255, 255, 0.4);
+    color: white;
+    border-left: 4px solid var(--main-color);
+    position: relative;
+  }
+
+  .nav_children li {
+    background-color: transparent;
+    border: none;
+    text-align: left;
+    transition: all 0.3s;
+    padding-left: 80px;
+    border-left: 4px solid var(--main-color);
+    position: relative;
+  }
+
+  .nav_children li::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 70px;
+    color: white;
+    transform: translate(0, -50%);
+  }
+
+  .nav_children svg {
+    position: relative;
+    top: auto;
+    left: auto;
+    fill: #fff;
+  }
+
+  .nav_children li a {
+    display: flex;
+    align-items: center;
+    color: white;
+  }
+
+  .has_child svg {
+    fill: #fff;
+  }
+
+<<<<<<< HEAD
+  /*繝懊ち繝ｳ蜀��*/
+=======
+  /*ボタン内側*/
+>>>>>>> 318a1885c887e608581719d4f85831aa6c5e0cb8
+  .openbtn1 {
+    display: block;
+    position: fixed;
+    top: 0;
+    right: 10px;
+    z-index: 1000;
+    width: 25px;
+    height: 45px;
+  }
+
+<<<<<<< HEAD
+  /*繝懊ち繝ｳ蜀��*/
+  .openbtn1 span {
+    display: inline-block;
+    transition: all .4s;
+    /*繧｢繝九Γ繝ｼ繧ｷ繝ｧ繝ｳ縺ｮ險ｭ螳�*/
+=======
+  /*ボタン内側*/
+  .openbtn1 span {
+    display: inline-block;
+    transition: all .4s;
+>>>>>>> 318a1885c887e608581719d4f85831aa6c5e0cb8
+    position: absolute;
+    left: 0;
+    height: 3px;
+    border-radius: 2px;
+    background: #686868;
+    width: 100%;
+  }
+
+  .openbtn1 span:nth-of-type(1) {
+    top: 15px;
+  }
+
+  .openbtn1 span:nth-of-type(2) {
+    top: 23px;
+  }
+
+  .openbtn1 span:nth-of-type(3) {
+    top: 31px;
+  }
+
+<<<<<<< HEAD
+  /*active繧ｯ繝ｩ繧ｹ縺御ｻ倅ｸ弱＆繧後ｋ縺ｨ邱壹′蝗櫁ｻ｢縺励※ﾃ励↓*/
+=======
+  /*activeクラスが付与されると線が回転して×に*/
+>>>>>>> 318a1885c887e608581719d4f85831aa6c5e0cb8
+  .openbtn1.active span {
+    background-color: white;
+  }
+
+  .openbtn1.active span:nth-of-type(1) {
+    top: 18px;
+    left: 0;
+    transform: translateY(6px) rotate(-45deg);
+  }
+
+  .openbtn1.active span:nth-of-type(2) {
+    opacity: 0;
+<<<<<<< HEAD
+    /*逵溘ｓ荳ｭ縺ｮ邱壹�騾城℃*/
+=======
+    /*真ん中の線は透過*/
+>>>>>>> 318a1885c887e608581719d4f85831aa6c5e0cb8
+  }
+
+  .openbtn1.active span:nth-of-type(3) {
+    top: 30px;
+    left: 0;
+    transform: translateY(-6px) rotate(45deg);
+  }
+
+  .header_logobox {
+    padding: 12.5px 20px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+  }
+
+  .header_logobox img {
+    max-width: 244px;
+  }
+
+  .logo_icon {
+    margin-top: 30px;
+    width: 100%;
+    display: block;
+    text-align: center;
+  }
+
+  .logo_icon img {
+    margin: 0 auto;
+  }
+
+  .header_logobox a {
+    line-height: 20px;
+  }
+<<<<<<< HEAD
+
+  .container {
+    max-width: none;
+  }
+
+=======
+>>>>>>> 318a1885c887e608581719d4f85831aa6c5e0cb8
+}

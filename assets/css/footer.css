@@ -1,0 +1,200 @@
+<<<<<<< HEAD
+=======
+.container {
+  padding-left: 20px;
+  padding-right: 20px;
+  width: 100%;
+  max-width: 1140px;
+  margin: 0 auto;
+  position: relative;
+}
+
+>>>>>>> 318a1885c887e608581719d4f85831aa6c5e0cb8
+.footer_btn {
+  position: relative;
+  width: 170px;
+  line-height: 80px;
+  border-radius: 40px;
+  background: #fff;
+  border: 2px solid #d6d6d6;
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  transition: all 0.3s;
+}
+
+.footer_btn:hover {
+  text-decoration: none;
+  opacity: 0.6;
+}
+
+.btn_text {
+  position: relative;
+  top: 5px;
+  font-size: 15px;
+}
+
+.footer_content {
+  background-color: #F5F5F5;
+  font-weight: bold;
+}
+
+.footer_content a {
+  color: #666;
+
+}
+
+.copyright {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 30px;
+  text-align: center;
+  color: #333;
+  padding: 10px;
+}
+
+.footer_links {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 30px;
+  text-align: left;
+  color: #333;
+  justify-content: space-around;
+  margin-top: 30px;
+}
+
+.footer_links li {
+
+  position: relative;
+}
+
+.footer_links li::before {
+  content: "/";
+  position: absolute;
+  right: -1.5vw;
+}
+
+.footer_links li:last-child::before {
+  content: none;
+}
+
+.logo_icon {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  transform: translate(100%, 0);
+}
+
+footer {
+  margin-top: 100px;
+  font-family: 'Noto Sans JP', "繝偵Λ繧ｮ繝手ｧ偵ざ Pro", "Hiragino Kaku Gothic Pro", "繝｡繧､繝ｪ繧ｪ", Meiryo, sans-serif;
+
+}
+
+.text-right {
+  text-align: right;
+}
+
+.footer_content {
+  padding: 30px;
+  line-height: 30px;
+  padding-bottom: 70px;
+}
+
+.footer_btn svg {
+  fill: #686868;
+  position: absolute;
+  top: 16px;
+  left: 50%;
+  transform: translate(-50%, 0);
+  stroke: none;
+}
+
+footer .copyright p {
+  line-height: 30px;
+}
+
+@media screen and (max-width: 767px) {
+  .pc {
+    display: none;
+  }
+
+  .sp {
+    display: block;
+  }
+
+  .logo_icon {
+    position: relative;
+    right: auto;
+    bottom: auto;
+    transform: none;
+
+  }
+
+<<<<<<< HEAD
+
+
+  .header_logobox img {
+    max-width: 244px;
+  }
+
+=======
+>>>>>>> 318a1885c887e608581719d4f85831aa6c5e0cb8
+  .footer_btn .btn_text {
+    display: none;
+  }
+
+  .footer_btn {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    border: 2px solid #D6D6D6;
+  }
+
+  .footer_btn svg {
+    top: auto;
+  }
+
+  .footer_links {
+    justify-content: flex-start;
+    flex-wrap: wrap;
+  }
+
+  .footer_links li {
+    width: 100%;
+    padding: 20px 30px;
+    border-top: 1px solid #C9C9C9;
+    line-height: 30px;
+  }
+
+  .footer_links li:last-of-type {
+    border-bottom: 1px solid #C9C9C9;
+
+  }
+
+  .footer_links li::before {
+    content: none;
+  }
+
+  .logo_icon {
+    margin-top: 30px;
+    width: 100%;
+    display: block;
+    text-align: center;
+  }
+
+  .logo_icon img {
+    margin: 0 auto;
+  }
+
+  footer .copyright p {
+    text-align: center;
+  }
+
+  .container {
+    max-width: none;
+  }
+}
