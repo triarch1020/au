@@ -1,0 +1,120 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+  height: 100%;
+}
+
+body {
+  font-family: 'Noto Sans JP', "ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, sans-serif;
+  font-weight: 400;
+  color: #333333;
+  line-height: 1;
+  -webkit-text-size-adjust: none;
+}
+
+body.active {
+  height: 100%;
+  overflow: hidden;
+}
+
+a {
+  color: #333333;
+  text-decoration: none;
+  transition: .3s;
+}
+
+a:hover {
+  opacity: .75;
+}
+
+img {
+  display: block;
+  height: auto;
+  max-width: 100%;
+}
+
+dl, ul {
+  list-style: none;
+}
+
+.container {
+  padding-left: 20px;
+  padding-right: 20px;
+  width: 100%;
+  max-width: 1140px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.breadcrumbs {
+  width: 100%;
+  background-color: #686868;
+  padding: 10px 30px;
+  font-weight: 500;
+  font-size: 1.6rem;
+  line-height: 1;
+  text-align: left;
+  color: #fff;
+  align-items: center;
+}
+
+.breadcrumbs_item_link {
+  text-decoration: none;
+  color: white !important;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 21px;
+}
+
+.breadcrumbs_item_link:hover {
+  text-decoration: underline;
+}
+
+.breadcrumbs {
+  display: flex;
+  margin-top: 74px;
+}
+
+.breadcrumbs * {
+  color: white;
+}
+
+.breadcrumbs_item {
+  padding-right: 1em;
+  padding-left: 1em;
+  font-size: 16px;
+  line-height: 21px;
+}
+
+.breadcrumbs_item:first-child {
+  padding-left: 0;
+}
+
+.c-BreadList:not(:last-child):after {
+  content: none !important;
+}
+
+@media screen and (max-width: 767px) {
+.breadcrumbs {
+  margin-top: 50px;
+}
+
+.breadcrumbs {
+  padding: 7px 10px;
+  font-size: 1.2rem;
+}
+
+.breadcrumbs_item {
+  padding-right: 10px;
+}
+
+.container {
+  max-width: none;
+}
+
+
+
+}
