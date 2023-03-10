@@ -403,6 +403,15 @@ main {
   .new_posts_list1_item {
     width: calc((100% - 40px) / 2);
   }
+
+  .new_posts_list1_item:first-child {
+    float: left;
+  }
+
+  .new_posts_list1_item:nth-child(n+2) {
+    float: right;
+    margin-bottom: 40px;
+  }
   
   .new_posts_list1_item:nth-child(n+2) .new_posts_list1_item_link_inner {
     display: flex;
@@ -427,9 +436,11 @@ main {
   }
   
   .new_posts_list2 {
-    margin-top: 40px;
+    clear: both;
+    margin-top: 0;
     display: flex;
     flex-wrap: wrap;
+    padding-top: 40PX;
   }
   
   .new_posts_list2_item {
