@@ -40,6 +40,14 @@ dl, ul {
   list-style: none;
 }
 
+.only_pc {
+  display: block;
+}
+
+.only_sp {
+  display: none;
+}
+
 .container {
   padding-left: 20px;
   padding-right: 20px;
@@ -113,6 +121,14 @@ dl, ul {
 
 .container {
   max-width: none;
+}
+
+.only_pc {
+  display: none;
+}
+
+.only_sp {
+  display: block;
 }
 
 
